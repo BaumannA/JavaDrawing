@@ -98,7 +98,6 @@ public class Open extends PApplet {
 	int num3;
 	int num4;
 	
-//	final boolean enter = keyPressed && key == ENTER | key == RETURN;
 	
 	char letter;
 	String name = "";
@@ -170,11 +169,6 @@ public class Open extends PApplet {
 		}
 		}
 
-		
-		
-
-		
-		
 		
 		textSize(36);
 		text(name, 50, 120, 540, 300);
