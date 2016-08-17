@@ -1,6 +1,6 @@
 # Java-Drawing
 
-This program is a very simple drawing program.
+This program is a very simple drawing program made to show the very basics of how shapes are created using most languages.
 
 Right now this is a work in progress.
 
