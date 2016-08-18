@@ -1,5 +1,3 @@
-package movement;
-
 import processing.core.PApplet;
 import processing.core.PFont;
 import processing.core.PImage;
@@ -10,51 +8,7 @@ import java.util.Scanner;
 
 @SuppressWarnings("serial")
 
-public class Open extends PApplet {
-
-	enum GameState {
-		MENU, RUNNING
-	}
-
-	static GameState currentState;
-
-	public void setup1() {
-		currentState = GameState.MENU;
-		size(400, 400);
-
-	}
-
-	public void draw1() {
-
-		switch (currentState) {
-		case MENU:
-			drawMenu();
-			break;
-		case RUNNING:
-			drawRunning();
-			break;
-		}
-
-	}
-
-	public void mousePressed() {
-		if (currentState == GameState.MENU && mouseX > 10 && mouseX < 30 && mouseY > 10 && mouseY < 30) {
-			currentState = GameState.RUNNING;
-		}
-	}
-
-	public void drawMenu() {
-		clear();
-		background(50, 60, 70);
-		rect(10, 10, 20, 20);
-
-	}
-
-	public void drawRunning() {
-		clear();
-		background(255, 255, 255);
-	}
-
+public class Main extends PApplet {
 	public int count;
 
 	public int xPos = 720;
