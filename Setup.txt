@@ -1,0 +1,8 @@
+To setup up this program you need processing inside of Eclipse
+
+There is a fairly simple tutorial on it you can find here https://processing.org/tutorials/eclipse/
+
+Then simply copy and paste the code into Eclipse
+
+Best Regards,
+BaumannA
