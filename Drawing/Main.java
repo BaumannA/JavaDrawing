@@ -1,14 +1,14 @@
-import processing.core.PApplet;
-import processing.core.PFont;
-import processing.core.PImage;
-import processing.core.PShape;
-
 import java.util.ArrayList;
 import java.util.Scanner;
+import processing.core.PApplet;
+import processing.core.PShape;
 
-@SuppressWarnings("serial")
-
-public class Main extends PApplet {
+public class MainDrawing extends PApplet {
+	
+	public static void main(String[] args) {
+		PApplet.main("MainDrawing");
+	}
+	
 	public int count;
 
 	public int xPos = 720;
@@ -52,6 +52,9 @@ public class Main extends PApplet {
 	int num3;
 	int num4;
 	
+	public void settings(){
+		size(1280, 720);
+	}
 	
 	char letter;
 	String name = "";
@@ -87,7 +90,7 @@ public class Main extends PApplet {
 		
 		if (state == 0){
 			text("What is your name?", 50, 50);
-			text("Would you like to create/n 1. A circle /n 2. A triangle/n 3. A rectangle?");
+//			text("Would you like to create/n 1. A circle /n 2. A triangle/n 3. A rectangle?");
 		}
 		else if (state == 1){
 			
@@ -125,7 +128,7 @@ public class Main extends PApplet {
 
 		
 		textSize(36);
-		text(name, 50, 120, 540, 300);
+		text(name, 50, 600, 540, 300);
 		move();
 		translate(x, y);
 		drawRocketShip();
