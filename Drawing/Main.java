@@ -47,7 +47,7 @@ public class Main extends PApplet{
 			}
 		}
 		else {
-			println("Uh oh spagetti O!");
+			println("Uh oh spaghetti O!");
 		}
 	}
 	
